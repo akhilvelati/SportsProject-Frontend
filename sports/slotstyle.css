@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+.time-slot {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.time-slot.selected {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.time-slot.disabled {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.time-slot:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-book {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #1abc9c;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.not-available {
+  background-color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.clicked {
+  background-color: #1abc9c;
+}
+
+.container .danger {
+  font-size: 15px;
+  /* justify-content: center; */
+  color: red;
+  position: absolute;
+  transition: 0.3s;
+  animation: 0.3s linear;
+  display: none;
+}
+
+.container .success {
+  font-size: 15px;
+  /* justify-content: center; */
+  color: rgb(53, 156, 72);
+  position: absolute;
+  transition: 0.3s;
+  animation: 0.3s linear;
+  /* display: none; */
+}
+
+@keyframes buttons {
+  0% {
+    transform: scale(0.1);
+  }
+  0% {
+    transform: scale(0.5);
+  }
+  0% {
+    transform: scale(1);
+  }
+}

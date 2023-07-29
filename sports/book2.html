@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>book2</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+<a href="homepage.html" class="logo">Sports Hub </a>
+
+<nav class="navbar">
+  <a href="homepage.html">Home</a>
+  <a href="sports.html">Sports Info</a>
+  <a href="hee.html">Book</a>
+  <a href="loginpage.html">Login</a>
+</nav>
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selection</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .whole{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    h2{
+      font-size: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="whole">
+  <div class="container">
+    <h2>Selection</h2>
+    <form>
+      <div class="form-group">
+        <label for="bat">Selected</label>
+        <h3> Cricket bat</h3>
+        
+
+        
+        <select id="bat" name="bat">
+          <option value="Cricket Bat">Cricket Bat</option>
+          <option value="Football">Football</option>
+          <option value="Basketball">Basketball</option>
+        </select>
+      
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit" onclick="showAlert()">
+      </div>
+    </form>
+  </div>
+  </div>
+  <script>
+    function showAlert() {
+
+        alert("Kits Booked!");
+    }
+</script>
+
+
+</body>
+</html>
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer" style="background-color: rgb(40, 40, 40);">
+
+   <div class="box-container">
+
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="homepage.html"> <i class="fas fa-angle-right"></i> home</a>
+      <a href="hee.html"> <i class="fas fa-angle-right"></i> Slot Booking</a>
+      <a href="sports.html"> <i class="fas fa-angle-right"></i> Sports Info</a>
+      <a href="homepage.html"> <i class="fas fa-angle-right"></i> about</a>
+   </div>
+
+   <div class="box">
+      <h3>contact info</h3>
+      <a href="#"> <i class="fas fa-phone"></i> 9876543210 </a>
+      <a href="#"> <i class="fas fa-phone"></i> 9087654321</a>
+      <a href="#"> <i class="fas fa-envelope"></i> Geetanjalisports@gmail.com </a>
+      <a href="#"> <i class="fas fa-map"></i> HYDERABAD, india - 500001 </a>
+   </div>
+
+   <div class="box">
+      <h3>follow us</h3>
+      <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+      <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+      <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+      <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+   </div>
+
+   </div>
+
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>

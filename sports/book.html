@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>book</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="bookstyle.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+<a href="homepage.html" class="logo">Sports Hub</a>
+
+   <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="sports.html">Sports Info</a>
+      <a href="hee.html">Book</a>
+      <a href="loginpage.html">Login</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends 
+
+<div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
+   <h1>book now</h1>
+</div>
+-->
+
+<!-- booking section starts  -->
+
+
+<section class="booking" style="padding-top: 20px; padding-bottom: 20px;">
+   <h1 class="heading-title">book your slot!</h1>
+   <h3 class="ground-name"></h3>
+   <html>
+   <head>
+     <title>Time Slot Booking</title>
+   </head>
+   <body>
+     <div class="container">
+      <!DOCTYPE html>
+<html>
+<head>
+  <title>Selection</title>
+ 
+</head>
+<body>
+  <div class="whole">
+  <div class="container1">
+    <h2 style="margin-bottom: 20px;">Selection :</h2>
+  
+    
+    <form>
+      <div class="form-group">
+        <select id="bat" name="bat">
+          <option value="Cricket Ground" style="font-size: 15px;">Cricket Ground</option>
+          <option value="Football Ground" style="font-size: 15px;">Football Ground</option>
+          <option value="Basketball" style="font-size: 15px;">Basketball Court</option>
+          <option value="Basketball" style="font-size: 15px;">VolleyBall Court</option>
+          <option value="Basketball" style="font-size: 15px;">Badminton Court</option>
+          <option value="Basketball" style="font-size: 15px;">Tennis Court</option>
+        </select>
+      </div>
+    <!--
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+      </div>
+      
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+      -->
+    </form>
+  </div>
+  </div>
+</body>
+</html>
+       <div class="time-slots">
+         <div class="time-slot">9:00 AM </div>
+         <div class="time-slot">10:00 AM</div>
+         <div class="time-slot disabled">11:00 AM</div>
+         <div class="time-slot">12:00 PM</div>
+         <div class="time-slot">1:00 PM</div>
+         <div class="time-slot">2:00 PM</div>
+         <div class="time-slot">3:00 PM</div>
+       </div>
+       <button class="btn-book" style="font-size: 15px;">Book Time Slot</button>
+     </div>
+
+    
+   
+     <script>
+       // JavaScript code to handle the time slot selection
+       const timeSlots = document.querySelectorAll('.time-slot');
+       const bookButton = document.querySelector('.btn-book');
+   
+       function selectTimeSlot() {
+         // Remove 'selected' class from all time slots
+         timeSlots.forEach(slot => {
+           slot.classList.remove('selected');
+         });
+   
+         // Add 'selected' class to the clicked time slot
+         this.classList.add('selected');
+       }
+   
+       function bookTimeSlot() {
+         // Check if a time slot is selected
+         const selectedSlot = document.querySelector('.time-slot.selected');
+         if (selectedSlot) {
+           // Perform booking logic here
+           alert('Time slot booked: ' + selectedSlot.textContent);
+         } else {
+           alert('Please select a time slot.');
+         }
+       }
+   
+       // Attach event listeners
+       timeSlots.forEach(slot => {
+         slot.addEventListener('click', selectTimeSlot);
+       });
+   
+       bookButton.addEventListener('click', bookTimeSlot);
+     </script>
+   </body>
+   </html>
+   
+   
+
+<!-- footer section starts  -->
+
+<!--
+<section class="footer" style="background-color: rgb(40, 40, 40);">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="hee.html"> <i class="fas fa-angle-right"></i> Slot Booking</a>
+         <a href="sports.html"> <i class="fas fa-angle-right"></i> Sports Info</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> 9876543210 </a>
+         <a href="#"> <i class="fas fa-phone"></i> 9087654321</a>
+         <a href="#"> <i class="fas fa-envelope"></i> Geetanjalisports@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> HYDERABAD, india - 500001 </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+
+</section>
+-->
+<!-- footer section ends -->
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>

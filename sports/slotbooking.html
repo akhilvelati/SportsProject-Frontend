@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Slot Booking</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="slotstyle.css" />
+    <link rel="stylesheet" href="bookstyle.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="slotbook.js"></script>
+  </head>
+  <section class="header">
+    <a href="homepage.html" class="logo">Sports Hub</a>
+
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="sports.html">Sports Info</a>
+      <a href="hee.html">Book</a>
+      <a href="loginpage.html">Login</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+
+  <!-- header section ends 
+    
+    <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
+       <h1>book now</h1>
+    </div>
+    -->
+
+  <!-- booking section starts  -->
+
+  <section class="booking" style="padding-top: 20px; padding-bottom: 20px">
+    <h1 class="heading-title">book your slot!</h1>
+    <h3 class="ground-name"></h3>
+    <html>
+      <head>
+        <title style="font-size: 15px">Time Slot Booking</title>
+      </head>
+      <body>
+        <div class="container">
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>Selection</title>
+            </head>
+            <body>
+              <div class="whole">
+                <div class="container1">
+                  <h2 style="margin-bottom: 20px">Selection :</h2>
+
+                  <form>
+                    <div class="form-group">
+                      <select id="bat" name="bat">
+                        <option value="Cricket Ground" style="font-size: 15px">
+                          Cricket Ground
+                        </option>
+                        <option value="Football Ground" style="font-size: 15px">
+                          Football Ground
+                        </option>
+                        <option value="Basketball" style="font-size: 15px">
+                          Basketball Court
+                        </option>
+                        <option value="Basketball" style="font-size: 15px">
+                          VolleyBall Court
+                        </option>
+                        <option value="Basketball" style="font-size: 15px">
+                          Badminton Court
+                        </option>
+                        <option value="Basketball" style="font-size: 15px">
+                          Tennis Court
+                        </option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </body>
+            <body>
+              <div class="container">
+                <h1>Time Slot Booking</h1>
+                <div class="time-slots" id="main-time-slots"></div>
+                <button class="btn-book" id="butoon" onclick="booking()">
+                  Book Time Slot
+                </button>
+                <div class="success" id="success">
+                  
+                </div>
+                <div class="danger" id="danger">
+                  This slot is already booked
+                </div>
+              </div>
+            </body>
+          </html>
+        </div>
+      </body>
+    </html>
+  </section>
+</html>
