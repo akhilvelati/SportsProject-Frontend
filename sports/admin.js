@@ -4,9 +4,53 @@ window.onload = function () {
     .get("http://localhost:8801/active_bookings")
     .then(function (response) {
       window.dataContainer = response.data;
-      resourceArray = response.data.resourceTable;
-      slotArray = response.data.slotTable;
-      array = response.data.data;
+      let testData = {
+        data: [
+          { count: "4/7", name: "Active Slot", image: "/images/booking.png" },
+          {
+            count: "22/200",
+            name: "Active Resource",
+            image: "/images/stadium.png",
+          },
+          {
+            count: "178/200",
+            name: "Available Resource",
+            image: "/images/equip-2.png",
+          },
+          {
+            count: "3/7",
+            name: "Available Slots",
+            image: "/images/available-slot.png",
+          },
+        ],
+        slotTable: [
+          {
+            userID: 1,
+            user_name: "akhil",
+            slot_time: "09:00:00",
+            booked_date: "2023-07-21T18:30:00.000Z",
+          },
+          {
+            userID: 3,
+            user_name: "srujan",
+            slot_time: "12:00:00",
+            booked_date: "2023-07-26T18:30:00.000Z",
+          },
+        ],
+        resourceTable: [
+          {
+            ID: 3,
+            userID: 3,
+            user_name: "srujan",
+            resource_name: "Football",
+            booked_date: "2023-07-27T18:30:00.000Z",
+          },
+        ],
+        messaage: "all counts sent",
+      };
+      resourceArray = testData.resourceTable//response.data.resourceTable;
+      slotArray = testData.slotTable//response.data.slotTable;
+      array = testData.data//response.data.data;
       console.log(array);
       console.log(resourceArray);
       console.log(slotArray);
